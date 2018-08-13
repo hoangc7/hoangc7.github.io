@@ -5,8 +5,8 @@ title: Các website hay hỗ trợ học và nâng cao code skills
 
 ## Tra cứu các hàm
 
-- [http://devdocs.io/](Dev docs) - Tổng hợp về tất cả các ngôn ngữ lập trình phổ biến
-- [https://oscarotero.com/jquery/] - Tra cứu các hàm của jQuery
+- [http://devdocs.io/](Dev docs) Tổng hợp về tất cả các ngôn ngữ lập trình phổ biến
+- [https://oscarotero.com/jquery/](Jquery Cheetsheet) - Tra cứu các hàm của jQuery
 
 ## Resources
 
