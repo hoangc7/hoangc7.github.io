@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Các website hay hỗ trợ học và nâng cao code skills
 ---
 
