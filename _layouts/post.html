@@ -18,7 +18,39 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        {{ content }}
+        {% assign category = site.my_categories | where: "slug", post.category %}
+        {% assign category = category[0] %}
+        {% if category %}
+            {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+        {% endif %}
+        
+        {% if post.tags.size > 0 %}
+          {% capture tags_content %} with <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
+          {% for post_tag in post.tags %}
+            {% assign tag = site.my_tags | where: "slug", post_tag %}
+            {% if tag %}
+              {% assign tag = tag[0] %}
+              {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+              {% assign tags_content = tags_content_temp %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        
+        <article>
+          <h1 class="post-title">post.title</h2>
+          
+          {% if category_content %}
+            <p id="post-meta post-cats">Category: {{ category_content }}</p>
+          {% endif %}
+          
+          <div class="post-content">
+            {{ content }}
+          </div>
+          
+          {% if tags_content %}
+            <p id="post-meta post-cats">Category: {{ tags_content }}</p>
+          {% endif %}
+        </article>
       </section>
     </div>
 
