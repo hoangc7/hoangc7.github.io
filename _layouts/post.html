@@ -5,6 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
     {% seo %}
@@ -23,7 +24,7 @@
         {% if category %}
             {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
         {% endif %}
-        
+
         {% if post.tags.size > 0 %}
           {% capture tags_content %} with <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
           {% for post_tag in post.tags %}
@@ -35,18 +36,18 @@
             {% endif %}
           {% endfor %}
         {% endif %}
-        
+
         <article>
-          <h1 class="post-title">post.title</h2>
-          
+          <h1 class="post-title">{{ post.title }}</h2>
+
           {% if category_content %}
             <p id="post-meta post-cats">Category: {{ category_content }}</p>
           {% endif %}
-          
+
           <div class="post-content">
             {{ content }}
           </div>
-          
+
           {% if tags_content %}
             <p id="post-meta post-cats">Category: {{ tags_content }}</p>
           {% endif %}
