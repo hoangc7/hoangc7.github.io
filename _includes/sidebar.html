@@ -1,0 +1,21 @@
+<div class="col-md-3">
+  <nav class="categories">
+    <h3>Categories</h3>
+
+    <ul class="nav">
+      {% for category in site.categories %}
+        <li class="nav-item"><a href="{{ category.url }}">{{ category.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <nav class="categories">
+    <h3>Tags</h3>
+
+    <ul class="nav">
+      {% for tag in site.tags %}
+        <li class="nav-item"><a href="{{ tag.url }}">{{ tag.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

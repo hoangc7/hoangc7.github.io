@@ -1,6 +1,17 @@
-<div id="header_wrap" class="outer">
-    <header class="inner">
-      <h1 id="project_title"><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
-      <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-    </header>
-</div>
+<header id="masthead" class="site-header navbar navbar-expand navbar-dark flex-column flex-md-row">
+  <div class="container">
+    <a href="/" class="navbar-brand mr-0 mr-md-2">{{ site.title | default: site.github.repository_name }}</a>
+
+    <nav class="navbar-nav">
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+        <li class="nav-item">
+          <a href="/getting-started.html">Getting Started</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex-row ml-md-auto d-none d-md-flex">
+
+    </div>
+  <div>
+</header>
