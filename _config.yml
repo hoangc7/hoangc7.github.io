@@ -1,3 +1,48 @@
 theme: jekyll-theme-slate
 title: FuriLabs Library
 description: Knowlegde base for WordPress theming
+collections:
+  my_categories:
+    output: true
+    permalink: /category/:name/
+  my_tags:
+    output: true
+    permalink: /tag/:name/
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Outputting
+permalink: /post/:title/
+paginate: 5
+paginate_path: '/page/:num/'
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: categories
+    values:
+      layout: category
+  -
+    scope:
+      path: ""
+      type: tags
+    values:
+      layout: tag
