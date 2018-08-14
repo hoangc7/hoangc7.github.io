@@ -18,10 +18,10 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.title}}</h1>
 
         <div class="list-group">
-          {% for post in site.categories[page.slug] %}
+          {% for post in site.tags[page.slug] %}
             <a href="{{ post.url | absolute_url }}" class="list-group-item">
               <h4 class="list-group-item-heading h6">{{ post.title }}
                 <small class="text-muted"> &ndash;

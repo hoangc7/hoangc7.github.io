@@ -1,5 +1,5 @@
 ---
 layout: tag
 slug: animation
-name: Animation
+title: Animation
 ---

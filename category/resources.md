@@ -1,5 +1,5 @@
 ---
 layout: category
 slug: resources
-name: Resources
+title: Resources
 ---

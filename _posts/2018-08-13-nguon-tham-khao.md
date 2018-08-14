@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Các website hay hỗ trợ học và nâng cao code skills
-category: resource
-tag: [ui, animation, cheetsheet]
+category: resources
+tags: [ui, animation, cheetsheet]
 ---
 
 ## Tra cứu các hàm

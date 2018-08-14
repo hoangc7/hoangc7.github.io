@@ -1,5 +1,5 @@
 ---
 layout: tag
 slug: ui
-name: UI
+title: UI
 ---

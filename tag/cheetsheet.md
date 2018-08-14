@@ -1,5 +1,5 @@
 ---
 layout: tag
 slug: cheetsheet
-name: Cheetsheet
+title: Cheetsheet
 ---
