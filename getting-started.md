@@ -12,13 +12,13 @@ title: Tạo theme mới từ theme core
 1. Copy toàn bộ file trong theme **drcore** sang theme mới.
 1. Click đúp vào file `npm-links.bat` để link các module cần thiết của nodejs vào theme.
 1. Sửa file `package.json` như sau:
-  - Sửa `name` thành tên folder của theme mới
-  - Sửa `pkgname` thành tên của theme.
-  - Sửa `prefix` theo format:
-    - Sửa `text` thành textdomain của theme mới
-    - Sửa `func` thành function prefix của theme mới
-    - Sửa `class` thành class prefix của theme mới
-    - Sửa `widget` thành widget prefix của theme mới.
+    - Sửa `name` thành tên folder của theme mới
+    - Sửa `pkgname` thành tên của theme.
+    - Sửa `prefix` theo format:
+        - Sửa `text` thành textdomain của theme mới
+        - Sửa `func` thành function prefix của theme mới
+        - Sửa `class` thành class prefix của theme mới
+        - Sửa `widget` thành widget prefix của theme mới.
 1. Mở **cmd** ở thư mục của theme mới và chạy lệnh `grunt buildstart`.
 
 ## Ví dụ minh hoạ
