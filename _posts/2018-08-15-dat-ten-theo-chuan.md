@@ -89,9 +89,7 @@ Dạo gần đây quy tắc BEM cho việc đặt tên class CSS đang phát tri
 
 Chi tiết về BEM ở link này: [http://getbem.com/naming/](http://getbem.com/naming/)
 
-Đây là một bài viết khá hay và rõ ràng về BEM:
-
-[CSS BEM Naming convention](https://medium.freecodecamp.org/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849)
+Đây là một bài viết khá hay và rõ ràng về BEM: [CSS BEM Naming convention](https://medium.freecodecamp.org/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849)
 
 **Ví dụ**
 
@@ -141,7 +139,7 @@ Như vậy khi làm CSS chúng ta không phải viết các CSS selector phức 
 - Viết thường và nối với nhau bằng dấu `_`.
 - Là danh từ và thể hiện rõ chức năng của attribute.
 
-** Danh sách tên các shortcode hay gặp (tên không có prefix)**
+**Danh sách tên các shortcode hay gặp (tên không có prefix)**
 
 ```
 messenger
@@ -182,7 +180,7 @@ promotion
 cta
 ```
 
-** Danh sách tên các attribute thường dùng **
+**Danh sách tên các attribute thường dùng**
 
 ```
 limit
