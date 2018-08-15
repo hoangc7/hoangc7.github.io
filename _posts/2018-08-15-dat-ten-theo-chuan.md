@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Đặt tên theo chuẩn trong quá trình code theme/plugin
+title: Đặt tên theo chuẩn
 category: standards
 ---
 
@@ -182,7 +182,7 @@ promotion
 cta
 ```
 
-**Danh sách tên các attribute thường dùng**
+** Danh sách tên các attribute thường dùng **
 
 ```
 limit
