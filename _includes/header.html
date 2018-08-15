@@ -1,17 +1,28 @@
 <header id="masthead" class="site-header navbar navbar-expand navbar-dark flex-column flex-md-row">
   <div class="container">
-    <a href="/" class="navbar-brand mr-0 mr-md-2">{{ site.title | default: site.github.repository_name }}</a>
+    <a href="/" class="navbar-brand mr-0 mr-md-4">{{ site.title | default: site.github.repository_name }}</a>
 
-    <nav class="navbar-nav">
-      <ul class="navbar-nav bd-navbar-nav flex-row">
+    <nav class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a href="/getting-started.html">Getting Started</a>
+          <a href="/getting-started/" class="nav-link">Getting Started</a>
         </li>
       </ul>
     </nav>
 
-    <div class="flex-row ml-md-auto d-none d-md-flex">
-
+    <div class="ml-md-auto">
+      <form action="{{ site.baseurl }}/search/" method="get">
+        <div class="input-group">
+          <input type="text" id="search" name="q" class="form-control">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </form>
     </div>
   <div>
 </header>
+
+<div class="instance-search-results">
+  <div id="search-results" class="inner"></div>
+</div>

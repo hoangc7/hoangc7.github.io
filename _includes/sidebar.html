@@ -1,10 +1,10 @@
 <div class="sidebar col-md-3">
-  <nav class="categories mb-2">
+  <nav class="categories mb-4">
     <h4>Categories</h4>
 
     <ul class="nav flex-column">
       {% for category in site.categories %}
-        <li class="nav-item"><a href="/category/{{ category[0] | slugify }}/">{{ category[0] | capitalize }} <span class="badge badge-pill badge-secondary">{{ category[1].size }})</span></a></li>
+        <li class="nav-item"><a href="/category/{{ category[0] | slugify }}/">{{ category[0] | capitalize }} <span class="badge badge-pill badge-secondary">{{ category[1].size }}</span></a></li>
       {% endfor %}
     </ul>
   </nav>

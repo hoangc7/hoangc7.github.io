@@ -2,18 +2,26 @@
 layout: default
 ---
 
-{% if site.posts.size > 0 %}
-  <div class="list-group">
-    {% for post in site.posts limit: 10 %}
-      <a href="{{ post.url }}" class="list-group-item">
-        <h4 class="list-group-item-heading h6">{{ post.title }}
-          <small class="text-muted"> &ndash;
+<div class="list-group">
+  {% for post in paginator.posts %}
+    <div class="list-group-item">
+      <a href="{{ post.url }}">
+        <h4 class="list-group-item-heading h6 mb-0">{{ post.title }}
+          <small class="text-muted float-right mt-1">
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time>
           </small>
         </h4>
       </a>
-    {% endfor %}
-  </div>
-{% else %}
-  <p>No posts found.</p>
-{% endif %}
+
+      {% if post.category.size > 0 %}
+        <div class="post-meta post-cats">
+          {% for category in post.category %}
+            <a href="{{ site.baseurl }}/category/{{ category }}" class="badge badge-info">{{ category | replace: '-', ' ' | capitalize }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+{% include pagination.html %}
