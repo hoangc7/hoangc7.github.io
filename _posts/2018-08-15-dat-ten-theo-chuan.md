@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Đặt tên theo chuẩn trong quá trình code theme/plugin
-categoyr: standards
+category: standards
 ---
 
 Mục đích của bài viết này là để tạo ra 1 chuẩn chung cho cách đặt tên file, function, class và CSS class trong quá trình làm theme.
@@ -14,7 +14,7 @@ Việc đặt tên theo chuẩn cũng giống như việc tuân theo coding stan
 
 Trước khi đi vào chi tiết, mọi người cần nắm vững các tiêu chuẩn cơ bản về coding standards mà WordPress yêu cầu. Tất cả có ở trong link này:
 
-https://codex.wordpress.org/WordPress_Coding_Standards
+[WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards)
 
 Có 3 phần chính trong việc code WordPress themes/plugins, gồm PHP, CSS và Javascript. Về cơ bản, WordPress cũng chỉ tuân thủ theo quy tắc chung của từng ngôn ngữ. Tuy nhiên có một vài yêu cầu riêng mà WordPress tự đặt ra, mọi người nên nắm rõ các yêu cầu đó.
 
@@ -87,11 +87,11 @@ Các quy tắc cơ bản trong việc đặt tên CSS class.
 
 Dạo gần đây quy tắc BEM cho việc đặt tên class CSS đang phát triển và thể hiện nhiều ưu điểm. Cụ thể là trong những bản update gần đây của WooCommerce, plugin này đã dùng quy tắc này để đặt tên cho các element của mình.
 
-Chi tiết về BEM ở link này: http://getbem.com/naming/
+Chi tiết về BEM ở link này: [http://getbem.com/naming/](http://getbem.com/naming/)
 
 Đây là một bài viết khá hay và rõ ràng về BEM:
 
-https://medium.freecodecamp.org/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849
+[CSS BEM Naming convention](https://medium.freecodecamp.org/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849)
 
 **Ví dụ**
 
