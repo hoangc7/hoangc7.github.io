@@ -7,3 +7,21 @@ form {
 	background: transparent;
 	padding: 0;
 }
+
+#instance-search-results {
+	background: #f2f2f2;
+
+	.inner {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.result {
+		margin: 10px 0;
+	}
+
+	.post-date {
+		text-transform: capitalize;
+	}
+}
+

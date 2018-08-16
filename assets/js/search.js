@@ -39,6 +39,11 @@ jQuery(document).ready(function($) {
   var resultdiv = $('#search-results');
 
   function search( q ) {
+    if ( q == '' ) {
+      resultdiv.empty();
+      return;
+    }
+
     var result = idx.search( q );
 
     resultdiv.empty();
@@ -46,7 +51,7 @@ jQuery(document).ready(function($) {
 
     for (var item in result) {
       var ref = result[item].ref;
-      var searchitem = '<div class="result"><div class="result-body"><a href="'+store[ref].link+'" class="post-title">'+store[ref].title+'</a><div class="post-date small">'+store[ref].category+' &times; '+store[ref].date+'</div></div>';
+      var searchitem = '<div class="result"><div class="result-body"><a href="'+store[ref].link+'" class="post-title">'+store[ref].title+'</a><div class="post-date small">'+store[ref].category.replace( '-', ' ' ) +' &times; '+store[ref].date+'</div></div>';
       resultdiv.append(searchitem);
     }
   }
@@ -54,6 +59,7 @@ jQuery(document).ready(function($) {
   // Instance search
   $('input#search').on('keyup', function () {
     var query = $(this).val();
+
     search( query );
   });
 
