@@ -8,7 +8,12 @@ form {
 	padding: 0;
 }
 
-#instance-search-results {
+#main_content_wrap {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.instance-search-results {
 	background: #f2f2f2;
 
 	.inner {
