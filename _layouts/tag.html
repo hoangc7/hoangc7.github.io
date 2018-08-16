@@ -25,7 +25,7 @@
           {% for post in site.tags[page.slug] %}
             <a href="{{ post.url | absolute_url }}" class="list-group-item">
               <h4 class="list-group-item-heading h6">{{ post.title }}
-                <small class="text-muted"> &ndash;
+                <small class="text-muted float-right mt-1"> &ndash;
                   <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time>
                 </small>
               </h4>

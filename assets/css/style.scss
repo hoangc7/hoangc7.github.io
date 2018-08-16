@@ -13,6 +13,10 @@ form {
 	padding-bottom: 30px;
 }
 
+#main_content {
+	padding-top: 0;
+}
+
 .instance-search-results {
 	background: #f2f2f2;
 
@@ -30,3 +34,6 @@ form {
 	}
 }
 
+#search-results.found {
+	padding-bottom: 10px;
+}

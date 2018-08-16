@@ -40,20 +40,22 @@ jQuery(document).ready(function($) {
 
   function search( q ) {
     if ( q == '' ) {
-      resultdiv.empty();
+      resultdiv.empty().removeClass( 'found' );
       return;
     }
 
     var result = idx.search( q );
 
-    resultdiv.empty();
-    resultdiv.prepend('<p class="">Found '+result.length+' result(s)</p>');
+    resultdiv.empty().removeClass( 'found' );
+    resultdiv.prepend('<p class="font-weight-bold pt-2">Found '+result.length+' result(s)</p>');
 
     for (var item in result) {
       var ref = result[item].ref;
-      var searchitem = '<div class="result"><div class="result-body"><a href="'+store[ref].link+'" class="post-title">'+store[ref].title+'</a><div class="post-date small">'+store[ref].category.replace( '-', ' ' ) +' &times; '+store[ref].date+'</div></div>';
+      var searchitem = '<div class="result alert alert-light"><a href="'+store[ref].link+'" class="post-title">'+store[ref].title+'</a><div class="post-date small">'+store[ref].category.replace( '-', ' ' ) +' &times; '+store[ref].date+'</div></div>';
       resultdiv.append(searchitem);
     }
+
+    resultdiv.addClass( 'found' );
   }
 
   // Instance search
