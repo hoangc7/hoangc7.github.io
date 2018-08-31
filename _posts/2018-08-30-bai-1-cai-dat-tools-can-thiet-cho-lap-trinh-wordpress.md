@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bài 1: Giới thiệu các tools cần dùng cho lập trình WordPress
+title: Bài 1 - Giới thiệu các tools cần dùng cho lập trình WordPress
 category: theming
 ---
 
