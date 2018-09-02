@@ -24,6 +24,39 @@ Có 2 combo thường gặp cho server chạy PHP là: Apache + MySQL hoặc Ngi
 
 Để tiện cho việc cài đặt môi trường, mọi người nên dùng các App all in one để cài Web server và Database server nhanh gọn và đơn giản. Các app thông dụng là:
 
-[XAMPP](https://www.apachefriends.org/index.html) - Phổ biến
-[WAMP](http://www.wampserver.com/en/) - Ít phổ biến hơn WAMP
-[Uniserver](http://www.uniformserver.com/) - Nhỏ nhẹ hơn 2 cái trên do chỉ include những thứ cần thiết cho lập trình trên local.
+- [XAMPP](https://www.apachefriends.org/index.html) - Phổ biến
+- [WAMP](http://www.wampserver.com/en/) - Ít phổ biến hơn WAMP
+- [Uniserver](http://www.uniformserver.com/) - Nhỏ nhẹ hơn 2 cái trên do chỉ include những thứ cần thiết cho lập trình trên local.
+
+
+## Version Control - Quản lý code
+
+Quản lý phiên bản (mã nguồn) là hệ thống lưu trữ các thay đổi của files theo thời gian, giúp cho việc lưu trữ (backup) code, kiểm soát lỗi dễ dàng hơn, phục vụ cho team work tốt hơn.
+
+Hiện tại team đang sử dụng [Bitbucket](https://bitbucket.org/product) để quản lý code. Bitbacket là một hệ thống sử dụng Git để quản lý code cũng tương tự như Github, tuy nhiên hỗ trợ private reposity free :)
+
+Để dễ dàng cho việc sử dụng, chúng ta sẽ sử dụng [SourceTree](https://www.sourcetreeapp.com/) thay cho việc dùng command lines. Trong quá trình cài đặt, SourceTree sẽ tự động cài git Git. Tuy nhiên nếu ai muốn sử dụng cả Git Bash thì có thể cài riêng Git vào máy.
+
+Quy trình cơ bản của một lần push code là:
+
+1. Add files
+1. Commit
+1. Pull code (nếu có)
+1. Push
+
+Lưu ý, nên chia mỗi thay đổi thành 1 lần commit cụ thể để tiện cho việc debug về sau này. Viết commit nên viết cụ thể, không nên viết chung chung là "Sửa file", "Fix lỗi", "Fix CSS", ... Nên viết cụ thể là làm gì, thay đổi gì. Việc viết chung chung như vậy sẽ gây khó khăn cho các thành viên trong team nếu xảy ra lỗi.
+
+
+## Editor & IDE
+
+- IDE: [PHPStorm](https://www.jetbrains.com/phpstorm/) - Hiện tại PHPStorm có lẽ là IDE duy nhất hỗ trợ WordPress mặc định. Sau khi cài đặt, có thể làm theo tài liệu này để config support cho WordPress.
+
+https://confluence.jetbrains.com/display/PhpStorm/WordPress+Development+using+PhpStorm
+
+- Editors: [Sublime Text](https://www.sublimetext.com/3) - Rất nhanh và nhẹ. Sau khi cài đặt ST, nên cài thêm các plugin sau để hỗ trợ code WordPress nhanh hơn.
+    - Package Control
+    - DocBlockr
+    - WordPress
+    - Alignment
+    - SublimeCodeIntel
+    - Sass
