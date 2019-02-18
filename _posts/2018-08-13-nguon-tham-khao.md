@@ -20,3 +20,13 @@ tags: [ui, animation, cheetsheet]
 - [Smashing Magazine](https://www.smashingmagazine.com/) - Có nhiều bài viết hay liên quan đến frontend development
 - [CSS Tricks](https://css-tricks.com/) - Nhiều bài viết và tutorial hay về CSS
 - [CSS Winner](http://www.csswinner.com/) - Tổng hợp hiều website với CSS và animation hay.
+
+## Free Images & Video
+
+- [Mixkit](https://mixkit.co/) - Free videos
+- [Unsplash](https://unsplash.com/) - Free photos
+- [Pixabay](https://pixabay.com/en/) - Free photos & videos
+- [Icon8 Photos]https://photos.icons8.com/ - Free Photos
+- [Pexels](https://www.pexels.com/) - Free photos
+- [Burst](https://burst.shopify.com/) - Free photos
+- [Stocksnap](https://stocksnap.io/) - Free photos
