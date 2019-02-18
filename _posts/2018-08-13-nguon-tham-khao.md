@@ -26,7 +26,7 @@ tags: [ui, animation, cheetsheet]
 - [Mixkit](https://mixkit.co/) - Free videos
 - [Unsplash](https://unsplash.com/) - Free photos
 - [Pixabay](https://pixabay.com/en/) - Free photos & videos
-- [Icon8 Photos]https://photos.icons8.com/ - Free Photos
+- [Icon8 Photos](https://photos.icons8.com/) - Free Photos
 - [Pexels](https://www.pexels.com/) - Free photos
 - [Burst](https://burst.shopify.com/) - Free photos
 - [Stocksnap](https://stocksnap.io/) - Free photos
